@@ -7,6 +7,7 @@ Reqirements :  Windows 10/11 OS
                conda installed for virtual environments management
                pytorch with cuda installed from https://pytorch.org/get-started/locally/
                llama-cpp-python (min Version: 0.2.75)
+               fasterWhisper
                OpenVoice from this repo
                
                
