@@ -1,8 +1,8 @@
 from agents._Utils import  speak
 from agents._Utils import Timer
-import os, pyautogui, webbrowser, time, threading,json
+import os, pyautogui, webbrowser, time, threading,json , keyboard
 from datetime import datetime
-
+import pyperclip
 
 
 
@@ -103,17 +103,43 @@ class _FunctionAgent:
             print("Unknown command")
 
 
+    
+
     def save_last_reply(self):
-        with open('lema_last_reply.txt', 'r') as file:
-            lema_last_reply = file.read()
-            file.close()
-        def type_text(text):
-            pyautogui.typewrite(text, interval=0.01)
-        last_reply:str = lema_last_reply
-        os.system("start notepad")
-        time.sleep(0.5)  # wait for Notepad to start (adjust the delay as needed)
-        type_text(last_reply)
-        pyautogui.hotkey('alt', 'tab')
+        try:
+            # Read the conversation file
+            with open('conversation.json', 'r') as file:
+                conversation = json.load(file)
+            
+            # Find assistant replies
+            assistant_replies = [message for message in conversation if message['role'] == 'assistant']
+            
+            # Check if there are at least two assistant replies
+            if len(assistant_replies) >= 2:
+                # Get the second last assistant reply
+                second_last_reply = assistant_replies[-2]['content']
+                
+                # Open Notepad
+                os.system("start notepad")
+                time.sleep(0.5)  # wait for Notepad to start (adjust the delay as needed)
+                
+                # Copy the reply to clipboard and paste it into Notepad
+                pyperclip.copy(second_last_reply)
+                keyboard.press_and_release('ctrl+v')
+                
+                # Switch back to the previous window
+                keyboard.press_and_release('alt+tab')
+                
+                # print("Second last assistant's reply saved to Notepad.")
+            else:
+                print("Not enough assistant replies in the conversation.")
+        
+        except FileNotFoundError:
+            print("Conversation file not found.")
+        except json.JSONDecodeError:
+            print("Error decoding JSON from the conversation file.")
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
     
     
     def add_memo(self, memo):
