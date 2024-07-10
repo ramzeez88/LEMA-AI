@@ -3,7 +3,7 @@ My take on creating an inteligent local assistant with some 'superpowers'. I hav
 
 Reqirements :  
 Windows 10/11 OS,
-cuda enabled device with cuda 12.1 support, install CUDNN from https://developer.nvidia.com/cudnn ,
+cuda enabled device with cuda 12.1 support, install CUDNN from https://developer.nvidia.com/cudnn , my nvidia driver version 546.33
 Visual Studio Build Tools 2022 (Desktop Development with C++ ticked and installed),
 conda installed for virtual environments management,
 pytorch with cuda installed from https://pytorch.org/get-started/locally/ (I use python 3.11),
