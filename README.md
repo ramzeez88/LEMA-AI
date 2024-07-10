@@ -9,7 +9,8 @@ Reqirements for python 3.11 :
 - pytorch with cuda installed pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --no-build-isolation,
 - llama-cpp-python (min Version: 0.2.75 , whl file can be downloaded from their releases page),
 - pip3 install faster-whisper --no-build-isolation,
-- git clone OpenVoice from here https://github.com/myshell-ai/OpenVoice/tree/main to LemaVoice folder and the checkpoints can be downloaded from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip then extracted to checkpoints folder in OpenVoice (not openvoice) folder,
+- git clone this repo
+- git clone OpenVoice from here https://github.com/myshell-ai/OpenVoice/tree/main to LemaAI folder and the checkpoints can be downloaded from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip then extracted to checkpoints folder in OpenVoice (not openvoice) folder,
                
             
 
