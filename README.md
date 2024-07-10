@@ -10,6 +10,6 @@ Reqirements :  Windows 10/11 OS
                fasterWhisper
                OpenVoice from this repo
                
-               
+            
 
 Licence not decided yet.
