@@ -1,15 +1,14 @@
 
 
-# Standard library imports
+
 import os
-# Third-party library imports
+
 import tkinter as tk
 from tkinter import messagebox , filedialog
 
-# Local modules imports
 from llama_cpp import Llama
 
-# Custom agents imports
+# agents imports
 from agents.function import _FunctionAgent as FunctionAgent
 from agents.routing import _RoutingAgent as RoutingAgent
 from agents.chat import _ChatAgent as ChatAgent
