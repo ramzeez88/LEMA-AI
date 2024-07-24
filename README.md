@@ -10,7 +10,8 @@ Reqirements for python 3.11 :
 - llama-cpp-python (min Version: 0.2.75 , whl file can be downloaded from their releases page),
 - pip3 install faster-whisper --no-build-isolation,
 - git clone this repo
-- git clone OpenVoice from here https://github.com/myshell-ai/OpenVoice/tree/main to LemaAI folder and the checkpoints can be downloaded from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip then extracted to checkpoints folder in OpenVoice (not openvoice) folder,
+- git clone OpenVoice from here https://github.com/myshell-ai/OpenVoice/tree/main to LemaAI folder and the checkpoints can be downloaded from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip then extracted to checkpoints folder in OpenVoice (not openvoice) folder.
+- move 'lema.mp3' to 'OpenVoice/resources' folder.
                
             
 
