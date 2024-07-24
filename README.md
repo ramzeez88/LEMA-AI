@@ -15,3 +15,4 @@ Reqirements for python 3.11 :
             
 
 Licence not decided yet.
+please support me on ko-fi.com/ramzeez88  :)
