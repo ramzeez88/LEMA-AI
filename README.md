@@ -12,6 +12,9 @@ Reqirements for python 3.11 :
 - git clone this repo
 - git clone OpenVoice from here https://github.com/myshell-ai/OpenVoice/tree/main to LemaAI folder and the checkpoints can be downloaded from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_1226.zip then extracted to checkpoints folder in OpenVoice (not openvoice) folder.
 - move 'lema.mp3' to 'OpenVoice/resources' folder.
+- move 'open_voice_main.py' to OpenVoice folder.
+
+If you are not worried about sensitive data leaving your computer and/or have less than 12GB VRAM, you can use edge_tts module in python to convert text to speech using Microsoft compute. All you have to do is pip install edge_tts asyncio pygame. 
                
             
 
