@@ -15,8 +15,10 @@ Reqirements for python 3.11 :
 - move 'open_voice_main.py' to OpenVoice folder.
 
 If you are not worried about sensitive data leaving your computer and/or have less than 12GB VRAM, you can use edge_tts module in python to convert text to speech using Microsoft compute. All you have to do is pip install edge_tts asyncio pygame , then rename Lema_voice_edge_tts.py to Lema_voice.py and in folder 'agents' rename _Utils_edge_tts.py to  _Utils.py.
+
                
-            
+This is a Work In Progress ,so there will be bugs and some things missing. I am working on Lema in my spare time. 
+
 
 Licence not decided yet.
 
