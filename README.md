@@ -1,5 +1,6 @@
 # LEMA AI - Local Efficient Multitasking Assistant v0.0.1
 My take on creating an inteligent local assistant with some 'superpowers'. I have tested it on Windows OS only. It's a proof of concept i guess. I always wanted to have a real "Jarvis" ;)
+Lema can do a few 'things' like open some apps, open web etc. For a full list of commands go to function.py and read the system prompt :)
 
 Reqirements for python 3.11 :  
 - Windows 10/11 OS,
@@ -15,6 +16,7 @@ Reqirements for python 3.11 :
 - move 'open_voice_main.py' to OpenVoice folder.
 
 So far I have used Hermes-2-Pro-Llama-3-Instruct-Merged-DPO-Q8_0.gguf with not bad results. You may ofcourse use any llm you want. Probably the more B's the better ;)
+
 
 If you are not worried about sensitive data leaving your computer and/or have less than 12GB VRAM, you can use edge_tts module in python to convert text to speech using Microsoft compute. All you have to do is pip install edge_tts asyncio pygame , then rename Lema_voice_edge_tts.py to Lema_voice.py and in folder 'agents' rename _Utils_edge_tts.py to  _Utils.py.
 
