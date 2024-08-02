@@ -1,5 +1,5 @@
 # LEMA AI - Local Efficient Multitasking Assistant v0.0.1
-My take on creating an inteligent local assistant with some 'superpowers'. I have tested it on Windows OS only. It's a proof of concept i guess. I always wanted to have a real "Jarvis" ;)
+My take on creating an inteligent local voice assistant with some 'superpowers'. I have tested it on Windows OS only. It's a proof of concept i guess. I always wanted to have a real "Jarvis" ;)
 Lema can do a few 'things' like open some apps, open web etc. For a full list of commands go to function.py and read the system prompt :)
 
 Reqirements for python 3.11 :  
